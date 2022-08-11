@@ -1,3 +1,197 @@
+/*Обнуление*/
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    font-family: Arial, 'Kaushan Script', cursive;
+    font-size: medium;
+}
 body{
-    color: darkblue;
+    background-image: url("img/fon_blue.jpg");
+    background-attachment: fixed;
+}
+
+.navbar{
+    background-color: rgba(248,248,248,0.5) !important;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    text-emphasis-color: black;
+    font-family: Arial,'Kaushan Script', cursive;
+}
+.navbar-text{
+    color: black;
+}
+.card-header-tabs .nav-link.active {
+    --bs-card-bg: rgba(255, 255, 255, 0.63);
+    font-style: unset;
+
+}
+.nav-link {
+    --bs-nav-link-color: black;
+
+}
+.card-body{
+    background-color: rgba(255, 255, 255, 0.63);
+}
+.container{
+    height: 100%;
+    align-content: center;
+}
+.card{
+    background: rgba(248,248,248,0.5) !important;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    position: relative;
+}
+.posts-tab{
+    background-color: red;
+}
+@media (min-width: 992px) {
+    .gedf-main {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+    .gedf-card {
+        margin-bottom: 2.77rem;
+    }
+}
+.gedf-wrapper {
+    margin-top: 0.97rem;
+    position: relative;
+    overflow: hidden;
+}
+* {
+    scrollbar-width: thin;
+    scrollbar-color: black rgba(0,0,0,0.5);
+}
+
+/* для Chrome/Edge/Safari */
+*::-webkit-scrollbar {
+    height: 12px;
+    width: 7px;
+}
+*::-webkit-scrollbar-track {
+    background: transparent;
+}
+*::-webkit-scrollbar-thumb {
+    background-color: darkgray;
+    border: 3px rgba(248,248,248,0.5);
+}
+a{
+    text-decoration:none !important;
+}
+h1,h2,h3{
+    font-family: 'Kaushan Script', cursive;
+}
+.myform{
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 1rem;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: rgba(248,248,248,0.5);
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 1.1rem;
+    outline: 0;
+    max-width: 500px;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+.tx-tfm{
+    text-transform:uppercase;
+}
+.mybtn{
+    border-radius:50px;
+}
+
+.login-or {
+    position: relative;
+    color: #aaa;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.span-or {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: -2px;
+    margin-left: -25px;
+    background-color: #fff;
+    width: 50px;
+    text-align: center;
+}
+.hr-or {
+    height: 1px;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+.google {
+    color:#666;
+    width:100%;
+    height:40px;
+    text-align:center;
+    outline:none;
+    border: 1px solid lightgrey;
+}
+form .error {
+    color: #ff0000;
+}
+#formContent {
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+    background: #fff;
+    padding: 30px;
+    width: 90%;
+    max-width: 450px;
+    position: relative;
+    padding: 0px;
+    -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+    box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+    text-align: center;
+}
+input[type=button], button[type=submit], input[type=reset], a[class=button]  {
+    background-color: #359aea;
+    border: none;
+    color: white;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 13px;
+    -webkit-box-shadow: 0 10px 30px 0 rgba(45, 169, 237, 0.76);
+    box-shadow: 0 10px 30px 0 rgba(74, 174, 225, 0.8);
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+    margin: 5px 5px 5px 10px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+input[type=button]:hover, button[type=submit]:hover, input[type=reset]:hover, a[class=button]:hover  {
+    background-color: #57b6ec;
+   color: white;
+}
+
+input[type=button]:active, button[type=submit]:active, input[type=reset]:active, a[class=button]:active  {
+    -moz-transform: scale(0.95);
+    -webkit-transform: scale(0.95);
+    -o-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    transform: scale(0.95);
 }

@@ -16,11 +16,13 @@ public class Message {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
+
     @Length(max = 255, message = "Многа букоф!")
     private String tag;
-    @NotBlank(message = "Строка текста не может быть пустой")
+
     @Length(max = 5000, message = "Многа букоф!")
     private String text;
+
     private String filename;
 
     @ManyToOne(fetch = FetchType.EAGER)
